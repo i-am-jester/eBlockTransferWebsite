@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — eBlock Transfer</title>
+  <meta name="description" content="Privacy Policy for the eBlock Transfer Chrome extension. 100% local browser storage with zero external data collection." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand-link">
+        <svg viewBox="0 0 128 128" width="24" height="24" fill="none" aria-hidden="true">
+          <defs>
+            <clipPath id="nav-squircle">
+              <rect x="8" y="8" width="112" height="112" rx="28" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#nav-squircle)">
+            <rect x="8" y="8" width="112" height="112" fill="#23272D" />
+            <polygon points="8,8 73,8 55,120 8,120" fill="#E11D56" />
+            <polygon points="29,55 67,55 57,45 69,33 100,64 69,95 57,83 67,73 29,73" fill="#FFFFFF" />
+          </g>
+        </svg>
+        <span>eBlock Transfer</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="nav__link">&larr; Back to Home</a>
+        <a href="https://chromewebstore.google.com/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Add to Chrome</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container container--narrow">
+      <header class="legal__header">
+        <p class="legal__updated">Last updated: November 25, 2026</p>
+        <h1 class="legal__title">Privacy Policy</h1>
+        <p class="legal__lead">
+          How eBlock Transfer handles data inside your browser.
+        </p>
+      </header>
+
+      <div class="legal-callout">
+        <strong>Short version:</strong> eBlock Transfer operates 100% locally on your device. We do not collect, transmit, store, or sell any personal data, browsing activity, analytics, or copied Elementor content on any external server.
+      </div>
+
+      <section class="legal-section">
+        <h2>1. Data Collection &amp; Network Transmission</h2>
+        <p>
+          eBlock Transfer makes <strong>zero network requests</strong>. The extension contains no analytics SDKs, telemetry beacons, remote APIs, user accounts, or tracking scripts. Nothing you copy, edit, or browse ever leaves your browser.
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>2. Local Browser Storage</h2>
+        <p>
+          To synchronize copied Elementor blocks across tabs on different domains, the extension uses Chrome's built-in local storage API (<code>chrome.storage.local</code>) strictly on your computer to store:
+        </p>
+        <ul>
+          <li><code>eblock_enabled</code> — your ON/OFF toggle preference.</li>
+          <li><code>eblock_history</code> — up to the 10 most recently copied Elementor JSON block structures, block category (Full Page, Container, Section, Column, or Widget), source hostname, and local timestamp.</li>
+          <li><code>eblock_active_id</code> — the identifier of the currently selected block in your Recent Blocks list.</li>
+        </ul>
+        <p>
+          This data remains exclusively within your local browser profile and is never synced to external servers.
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>3. Permissions Explained</h2>
+        <ul>
+          <li><strong>Storage (<code>storage</code>):</strong> Required to save your ON/OFF state and recent block clipboard items locally in <code>chrome.storage.local</code>.</li>
+          <li><strong>Host Access (<code>http://*/*</code>, <code>https://*/*</code>):</strong> WordPress sites using the Elementor editor can be hosted on any custom domain, subdomain, staging environment, or <code>localhost</code>. On non-Elementor websites, the script performs a lightweight check for Elementor's editor objects and immediately stops without reading or altering page content.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>4. Data Control &amp; Deletion</h2>
+        <p>
+          You have full control over your local data at all times:
+        </p>
+        <ul>
+          <li>Click <strong>Clear</strong> inside the extension popup to immediately erase all stored blocks.</li>
+          <li>Switch the header toggle to <strong>OFF</strong> to pause clipboard bridging on all tabs.</li>
+          <li>Uninstalling eBlock Transfer from your browser permanently deletes all associated local storage entries.</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>5. Third-Party Sharing &amp; Chrome Web Store Compliance</h2>
+        <p>
+          Because we do not collect any user data, we never sell, rent, or transfer user data to third parties, never use data for advertising or creditworthiness, and fully comply with the Chrome Web Store User Data Policy, including the Limited Use requirements.
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2>6. Changes to This Policy</h2>
+        <p>
+          If future updates introduce optional features that affect how data is handled, this Privacy Policy will be updated prior to release with a revised date at the top of this page.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="footer-links">
+        <span>Powered by <a href="https://github.com/i-am-jester" target="_blank" rel="noopener noreferrer" class="footer-brand">Jester</a></span>
+        <span class="footer-dot" aria-hidden="true">&middot;</span>
+        <a href="privacy-policy.html" class="footer-link">Privacy</a>
+        <span class="footer-dot" aria-hidden="true">&middot;</span>
+        <a href="terms-and-conditions.html" class="footer-link">Terms</a>
+      </div>
+      <span>&copy; 2026 eBlock Transfer. Not affiliated with Elementor Ltd.</span>
+    </div>
+  </footer>
+</body>
+</html>

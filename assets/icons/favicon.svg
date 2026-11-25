@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" fill="none">
+  <defs>
+    <clipPath id="squircle">
+      <rect x="8" y="8" width="112" height="112" rx="28" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#squircle)">
+    <rect x="8" y="8" width="112" height="112" fill="#23272D" />
+    <polygon points="8,8 73,8 55,120 8,120" fill="#E11D56" />
+    <polygon points="29,55 67,55 57,45 69,33 100,64 69,95 57,83 67,73 29,73" fill="#FFFFFF" />
+  </g>
+</svg>
