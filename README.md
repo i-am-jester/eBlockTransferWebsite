@@ -2,6 +2,9 @@
 
 Minimalist static landing page, interactive popup preview, Privacy Policy, and Terms & Conditions for the **eBlock Transfer** Chrome extension.
 
+- **Website:** [eblock-transfer.iamjester.app](https://eblock-transfer.iamjester.app/)
+- **Chrome Web Store:** [eBlock Transfer — Cross-Domain Block Copy for Elementor](https://chromewebstore.google.com/detail/eblock-transfer-%E2%80%94-cross-d/egnpiilgdgbdhmpchhoaoacjgainacbg)
+
 Built with zero external dependencies (pure HTML, CSS, and vanilla JavaScript) matching the exact color palette and UI language of the extension.
 
 ## Project Structure
